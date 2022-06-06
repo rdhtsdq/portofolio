@@ -575,6 +575,14 @@ html{
   height: 1.75rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -595,8 +603,20 @@ html{
   width: 75%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -627,10 +647,20 @@ html{
   gap: 1.25rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -672,6 +702,10 @@ html{
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
@@ -788,6 +822,10 @@ html{
     height: 10rem;
   }
 
+  .md\:h-3\/4 {
+    height: 75%;
+  }
+
   .md\:w-8 {
     width: 2rem;
   }
@@ -804,6 +842,10 @@ html{
     width: 18rem;
   }
 
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -812,8 +854,20 @@ html{
     align-items: flex-start;
   }
 
+  .md\:items-baseline {
+    align-items: baseline;
+  }
+
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .md\:justify-items-start {
+    justify-items: start;
   }
 
   .md\:gap-2 {
@@ -828,6 +882,18 @@ html{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-36 {
@@ -848,8 +914,17 @@ html{
     padding-right: 9rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
   }
 
   .md\:text-3xl {
