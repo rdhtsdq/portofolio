@@ -707,6 +707,10 @@ html{
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -881,6 +885,10 @@ html{
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:py-4 {

@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portofolio</title>
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./dist/output.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div 
+    
+    >
     <nav class="sticky top-0 z-50 flex justify-between shadow-white px-10 py-5 primary text-white">
         <a href="#" class="font-bold" id="logo">
             Radithya
@@ -49,9 +53,12 @@
         </ul>
     </div>
 
-    <div class="md:h-screen sm:h-4/5 sm:py-6 md:py-4 primary flex justify-center items-center text-white">
+    <div 
+    class="h-5/6 md:h-screen sm:py-6 md:py-4 primary flex justify-center items-center text-white">
         <div class="flex flex-col items-center gap-10 py-5 md:gap-5 mx-10">
-            <img src="image/profil.png" alt="profil Image" class="h-20 md:h-40 rounded-full align-middle">
+            <img 
+            
+            src="image/profile.png" alt="profil Image" class="h-20 md:h-40 rounded-full align-middle">
             <h1 id="logo" class="text-xl my-2 md:text-3xl font-bold text-white">Radithya</h1>
             <span class="font-light text-lg">i'm software developer</span>
             <div class="flex py-5">
@@ -72,28 +79,34 @@
             </div>
         </div>
     </div>
-    <section class="h-1/2" id="about">
-        <div class="flex flex-col gap-12 p-10 md:p-36">
-            <h1 class="text-primary text-2xl md:text-3xl tracking-tight font-medium text-center md:text-left" id="logo">About Me</h1>
-            <div class="flex flex-col gap-5 md:flex-row items-center md:items-start">
-               <img class="h-20 w-20 md:h-40 md:w-40" src="image/profil.png" alt="image" srcset=""> 
-               <div class="w-full h-2/3 md:w-3/5 shadow-lg p-6 md:p-4 rounded-lg bg-white">
-                    <p class="w-full text-lg md:text-xl ">
-                        I am Radithya Sidqi,software engineer from Bandung,
-                        Indonesia. I am fresh graduated as a junior programmer.
-                         <!-- I can use php framework like <span><a href="http://laravel.com" target="_blank" rel="noopener noreferrer" class="text-[#F9322C] font-bold"> Laravel</a>.</span> I also can use <span><a href="figma.com" class="font-bold">Figma</a></span> -->
-                    </p>
-               </div>
+</div>
+    <section
+     class="h-screen flex flex-col md:flex-row justify-center md:justify-items-start place-items-center md:py-20 gap-3">
+        <div class="flex flex-col space-y-4 items-center" id="about">
+            <h1
+             id="logo" class="text-2xl md:text-3xl text-primary">About Me</h1>
+            <img 
+            
+            class="h-32 w-32 md:h-40 md:w-40" src="image/profile.png" alt="my profile" srcset="">
+            <div
+            class="w-4/5 md:w-2/3 md:h-3/4 shadow-lg p-4 rounded-lg">
+                <p class="text-lg md:text-xl text-center md:text-justify">
+                    I am Radithya Sidqi,software engineer from Bandung,
+                    Indonesia. I am fresh graduated as a junior programmer.
+                    I can Code and Design.
+                </p>
             </div>
         </div>
+        </div>
     </section>
-
     <section class="h-screen">
-        <div class="text-center md:text-left md:px-36 my-5 text-2xl md:text-3xl text-primary">
-            <h1 id="logo">Service</h1>
+        <div 
+        class="text-center md:text-left md:px-36 my-5 text-2xl md:text-3xl text-primary">
+            <h1 id="logo" class="text-center ">Skils</h1>
         </div>
         <div class="flex flex-col md:flex-row md:justify-center items-center space-y-5 md:space-y-0 md:gap-5">
-            <div class="card font-card bg-[#6C6CE6] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
+            <div
+            class="card font-card bg-[#6C6CE6] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
                 <h1 class="font-bold text-2xl">Coding</h1>
                 <div class=" my-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-7 w-7 stroke-[4] " viewBox="0 0 16 16">
@@ -101,16 +114,27 @@
                         <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
                     </svg>
                 </div>
-                <p>
-                    I can use PHP ,and can use framework such as <span><a href="http://laravel.com" target="_blank" rel="noopener noreferrer" class="font-bold"> Laravel</a>.</span>
+                <p class="text-center p-2 md:p-0">
+                    I can use PHP ,and can use framework such as <span><a href="http://laravel.com" target="_blank" rel="noopener noreferrer" class="font-bold"> Laravel</a>,</span>
                 </p>
             </div>
-            <div class="card bg-[#FF4C61] text-white">
+            <div 
+            class="card font-card bg-[#FF4C61] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
                 <h1 class="font-bold text-2xl">Design</h1>
+                <div class=" my-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-7 w-7 stroke-[4]" viewBox="0 0 16 16">
+                        <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z"/>
+                      </svg>
+                </div>
+                <p class="text-center p-2 md:p-0">
+                    I also can Design ,tools that i use is <span><a href="http://figma.com/" target="_blank" rel="noopener noreferrer" class="font-bold"> Figma</a>.</span>
+                </p>
             </div>
         </div>
     </section>
+    <section class="h-screen">
 
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
