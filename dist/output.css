@@ -494,7 +494,6 @@ html{
 
 .card {
   border-radius: 0.5rem;
-  padding: 2rem;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -854,16 +853,8 @@ html{
     align-items: flex-start;
   }
 
-  .md\:items-baseline {
-    align-items: baseline;
-  }
-
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-evenly {
-    justify-content: space-evenly;
   }
 
   .md\:justify-items-start {
@@ -882,18 +873,6 @@ html{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-y-12 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-36 {
