@@ -435,6 +435,17 @@ html{
   font-family:"Roboto" ,sans-serif;
 }
 
+body {
+  cursor: default;
+}
+
+a{
+}
+
+.cursor{
+  margin: -12px 0 0 -12px;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -554,16 +565,12 @@ html{
   height: 1.5rem;
 }
 
-.h-5\/6 {
-  height: 83.333333%;
+.h-screen {
+  height: 100vh;
 }
 
 .h-20 {
   height: 5rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-32 {
@@ -572,6 +579,14 @@ html{
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[100\%vh\] {
+  height: 100%vh;
 }
 
 .w-6 {
@@ -644,12 +659,30 @@ html{
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
+.justify-self-end {
+  justify-self: end;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.bg-indigo-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#6C6CE6\] {
@@ -694,6 +727,11 @@ html{
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -717,6 +755,11 @@ html{
   line-height: 2rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -728,6 +771,18 @@ html{
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.mix-blend-darken {
+  mix-blend-mode: darken;
+}
+
+.mix-blend-color-dodge {
+  mix-blend-mode: color-dodge;
 }
 
 .shadow-md {
@@ -747,7 +802,42 @@ html{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+/* html::-webkit-scrollbar {
+    width:10px
+}
+
+html::-webkit-scrollbar-track {
+    backgroud-color:"blue"
+}
+
+html::-webkit-scrollbar-thumb{
+    backgroud:"blue"
+} */
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #20358a;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #101f57;
+}
+
 @media (min-width: 300) {
+  .sm\:p-0 {
+    padding: 0px;
+  }
+
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -755,12 +845,20 @@ html{
 }
 
 @media (min-width: 768px) {
+  .md\:fixed {
+    position: fixed;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
   }
 
   .md\:h-screen {
@@ -775,6 +873,14 @@ html{
     height: 75%;
   }
 
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:w-8 {
     width: 2rem;
   }
@@ -783,12 +889,16 @@ html{
     width: 10rem;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
+  .md\:w-\[550px\] {
+    width: 550px;
   }
 
   .md\:w-72 {
     width: 18rem;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
   }
 
   .md\:flex-row {
@@ -817,6 +927,10 @@ html{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -838,10 +952,6 @@ html{
 
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:text-justify {
-    text-align: justify;
   }
 
   .md\:text-3xl {

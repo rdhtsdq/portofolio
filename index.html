@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <div 
+<body class="scrollbar">
+    <div class="cursor md:fixed md:h-6 md:w-6 mix-blend-multiply bg-indigo-900 sm:p-0 z-50 rounded-full ">
+    </div>
+    <!-- <div 
     
     >
     <nav class="sticky top-0 z-50 navbar flex justify-between shadow-white px-10 py-5 primary text-white">
@@ -51,14 +53,14 @@
                 <a href="#">Contact</a>
             </li>
         </ul>
-    </div>
+    </div> -->
+<div>
 
-    <div 
-    class="navbar h-screen md:h-screen sm:py-6 md:py-4 primary flex justify-center items-center text-white">
+    <section class="navbar panel h-screen md:h-screen sm:py-6 md:py-4 primary flex justify-center items-center text-white">
         <div class="flex flex-col items-center gap-10 py-5 md:gap-5 mx-10">
             <img src="./src/image/profile.png" alt="profil Image" class="profile h-20 md:h-40 rounded-full align-middle">
             <h1 id="logo" class="text-hero text-xl my-2 md:text-3xl font-bold text-white">Radithya</h1>
-            <span class="text-hero font-light text-lg">i'm software developer</span>
+            <span class="text-hero font-light text-lg">i'm Junior Programmer</span>
             <div class="flex py-5">
                 <div class="mx-5 icon-hero">
                     <a href="https://www.instagram.com/rdhtsdq_/" target="_blank" rel="noopener noreferrer">
@@ -75,35 +77,40 @@
                     </a>
                 </div>
             </div>
+            <div class="justify-self-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </div>
         </div>
     </div>
-</div>
+</section>
     <section
-     class="h-screen flex flex-col md:flex-row justify-center md:justify-items-start place-items-center md:py-20 gap-3">
+     class="h-screen panel bg-white flex flex-col md:flex-row justify-center md:justify-items-start place-items-center md:py-20 gap-3">
         <div class="flex flex-col space-y-4 items-center" id="about">
             <h1
              id="logo" class="about-text text-2xl md:text-3xl text-primary">About Me</h1>
             <img class="about-profile h-32 w-32 md:h-40 md:w-40" src="./src/image/profile.png" alt="my profile" srcset="">
-            <div class="w-4/5 md:w-2/3 md:h-3/4 shadow-lg p-4 rounded-lg about-desc">
-                <p class="about-desc text-lg md:text-xl text-center md:text-justify">
+            <div class="about-desc w-4/5 md:w-[550px] md:h-3/4 shadow-lg p-4 rounded-lg">
+                <p class="about-desc text-lg md:text-xl text-center">
                     I am Radithya Sidqi,software engineer from Bandung,
                     Indonesia. I am fresh graduated as a junior programmer.
                     I can Code and Design.
+                    I like to explore and learn new things.
                 </p>
             </div>
         </div>
         </div>
     </section>
-    <section class="h-screen">
-        <div 
-        class="text-center md:text-left md:px-36 my-5 text-2xl md:text-3xl text-primary">
-            <h1 id="logo" class="text-center ">Skils</h1>
+    <section class="h-screen flex flex-col space-y-5 justify-center panel primary">
+        <div class="text-center md:text-left md:px-36 my-5 text-2xl md:text-3xl">
+            <h1 id="logo" class="text-center skils-text">My skils</h1>
         </div>
         <div class="flex flex-col md:flex-row md:justify-center items-center space-y-5 md:space-y-0 md:gap-5">
             <div
-            class="card font-card bg-[#6C6CE6] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
+            class="skil-card card font-card bg-[#6C6CE6] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
                 <h1 class="font-bold text-2xl">Coding</h1>
-                <div class=" my-5">
+                <div class="my-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-7 w-7 stroke-[4] " viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
@@ -114,7 +121,7 @@
                 </p>
             </div>
             <div 
-            class="card font-card bg-[#FF4C61] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
+            class="skil-card card font-card bg-[#FF4C61] flex flex-col w-3/4 md:w-72 items-center text-white text-lg md:text-xl">
                 <h1 class="font-bold text-2xl">Design</h1>
                 <div class=" my-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-7 w-7 stroke-[4]" viewBox="0 0 16 16">
@@ -122,24 +129,37 @@
                       </svg>
                 </div>
                 <p class="text-center p-2 md:p-0">
-                    I also can Design ,tools that i use is <span><a href="http://figma.com/" target="_blank" rel="noopener noreferrer" class="font-bold"> Figma</a>.</span>
+                    I also can Design ,tools that i use is <span><a href="http://figma.com/" target="_blank" rel="noopener noreferrer" class="font-bold"> Figma</a> and <a href="" class="font-bold"> CorelDraw </a>.</span>
                 </p>
             </div>
         </div>
     </section>
-    <section class="h-screen">
-
+    <section class="h-screen panel flex flex-col justify-center items-center bg-white">
+        <div class="flex justify-center items-center">
+            <h1 class="text-5xl font-bold">hiii</h1>
+        </div>
     </section>
     <!-- gsap -->
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="src/app.js"></script>
-    <!-- <script>
 
-        
-    </script> -->
-
-
-    <!-- <script src="./src/index.js"></script> -->
+    <script>
+        let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+        for (let item of anchorlinks) {
+            item.addEventListener('click', (e)=> {
+                let hashval = item.getAttribute('href')
+                let target = document.querySelector(hashval)
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+                history.pushState(null, null, hashval)
+                e.preventDefault()
+            })
+        }
+    </script>
 </body>
 </html>
