@@ -76,5 +76,3 @@ gsap.from(".about-desc",{
 // ScrollTrigger.create({
 //   snap: 1 / 4 // snap whole page to the closest section!
 // });
-
-
