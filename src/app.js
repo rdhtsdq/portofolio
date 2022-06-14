@@ -21,7 +21,7 @@ gsap.from(".navbar",{duration:1,y:-100,opacity:0})
 gsap.from(".profile",{duration:1,y:-50,opacity:0,delay:0.5})
 gsap.from(".text-hero",{duration:1,y:-50,opacity:0,delay:0.8})
 gsap.from(".icon-hero",{duration:1,y:-30,opacity:0,delay:1})
- 
+
 gsap.from(".about-text",{
   duration:1,
   x:-100,
