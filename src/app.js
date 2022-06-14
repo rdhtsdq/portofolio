@@ -1,21 +1,4 @@
-document.body.addEventListener("mousemove",e => {
-  const X = e.clientX;
-  const Y = e.clientY;
-
-  gsap.to('.cursor',{
-    x:X,
-    y:Y,
-    stagger:-0.1
-  })
-})
-
-
 gsap.registerPlugin(ScrollTrigger)
-
-const tl = gsap.timeline()
-
-tl.to(".panel",{x:-window.innerWidth()})
-
 
 gsap.from(".navbar",{duration:1,y:-100,opacity:0})
 gsap.from(".profile",{duration:1,y:-50,opacity:0,delay:0.5})
@@ -62,6 +45,19 @@ gsap.from(".about-desc",{
   }
 })
 
+document.body.addEventListener("mousemove",e => {
+  const X = e.clientX;
+  const Y = e.clientY;
+
+  gsap.to('.cursor',{
+    x:X,
+    y:Y,
+    stagger:-0.1
+  })
+})
+
+const tl = gsap.timeline()
+tl.to(".panel",{x:-window.innerWidth()})
 
 // gsap.utils.toArray(".panel").forEach((panel, i) => {
 //   ScrollTrigger.create({
