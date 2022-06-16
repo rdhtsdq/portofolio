@@ -98,18 +98,18 @@ document.body.addEventListener("mousemove",e => {
 })
 
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top", 
-    pin: true, 
-    pinSpacing: false 
-  });
-});
+// gsap.utils.toArray(".panel").forEach((panel, i) => {
+//   ScrollTrigger.create({
+//     trigger: panel,
+//     start: "top top", 
+//     pin: true, 
+//     pinSpacing: false 
+//   });
+// });
 
-const tl = gsap.timeline()
-tl.to(".panel",{x:-window.innerWidth()})
+// const tl = gsap.timeline()
+// tl.to(".panel",{x:-window.innerWidth()})
 
-ScrollTrigger.create({
-  snap: 1 / 8 // snap whole page to the closest section!
-});
+// ScrollTrigger.create({
+//   snap: 1 / 8 // snap whole page to the closest section!
+// });
