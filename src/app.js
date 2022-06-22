@@ -63,7 +63,7 @@ gsap.from(".about-desc",{
 
 gsap.from(".skil-text",{
   duration:1,
-  y:50,
+  y:200,
   opacity:0,
   ease:"back",
   scrollTrigger:{
@@ -83,7 +83,75 @@ gsap.from(".skil-card",{
   }
 })
 
+gsap.from(".project-text",{
+  duration:1,
+  x:-100,
+  opacity:0,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".project-text"
+  }
+})
 
+gsap.from('.pustakaan-title',{
+  duration:1,
+  opacity:0,
+  x:100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".pustakaan-title"
+  }
+})
+
+gsap.from('.pustakaan-content',{
+  duration:1,
+  opacity:0,
+  x:100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".pustakaan-content"
+  }
+})
+
+gsap.from('.mylib-title',{
+  duration:1,
+  opacity:0,
+  x:-100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".mylib-title"
+  }
+})
+
+gsap.from('.mylib-content',{
+  duration:1,
+  opacity:0,
+  x:-100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".mylib-content"
+  }
+})
+
+gsap.from('.myschool-title',{
+  duration:1,
+  opacity:0,
+  x:100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".myschool-title"
+  }
+})
+
+gsap.from('.myschool-content',{
+  duration:1,
+  opacity:0,
+  x:100,
+  scrollTrigger:{
+    start:"top 80%",
+    trigger:".myschool-content"
+  }
+})
 // cursor
 
 document.body.addEventListener("mousemove",e => {
