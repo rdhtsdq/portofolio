@@ -35,17 +35,6 @@
     }
 }
 
-/* html::-webkit-scrollbar {
-    width:10px
-}
-
-html::-webkit-scrollbar-track {
-    backgroud-color:"blue"
-}
-
-html::-webkit-scrollbar-thumb{
-    backgroud:"blue"
-} */
 
 .scrollbar::-webkit-scrollbar {
     width: 10px;
