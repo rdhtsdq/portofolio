@@ -572,16 +572,12 @@ a{
   width: 2rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-\[80vw\] {
   width: 80vw;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.w-3\/4 {
+  width: 75%;
 }
 
 .flex-col {
@@ -827,16 +823,12 @@ a{
     width: 550px;
   }
 
-  .md\:w-5\/12 {
-    width: 41.666667%;
-  }
-
-  .md\:w-\[80vw\] {
-    width: 80vw;
-  }
-
   .md\:w-\[70vw\] {
     width: 70vw;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .md\:flex-row {
