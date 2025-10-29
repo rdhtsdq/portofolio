@@ -8,8 +8,7 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Download, 
-  ExternalLink,
+  Download,
   Code,
   Database,
   Server,
@@ -45,31 +44,6 @@ const Portfolio = () => {
     databases: ['MySQL'],
     concepts: ['REST API', 'Web Development', 'Linux Server', 'SDLC']
   };
-
-  const experiences = [
-    {
-      title: 'Software Engineer',
-      company: 'PT Agung Kemuningwijaya',
-      period: 'Nov 2023 - Present',
-      achievements: [
-        'Developed responsive web application for logistics management using PHP, Laravel, Node.js, React, and MySQL',
-        'Optimized database queries, improving API response times by 40%',
-        'Collaborated with product managers and UI/UX designers',
-        'Led debugging efforts, reducing reported bugs by 25%'
-      ]
-    },
-    {
-      title: 'Android Developer',
-      company: 'PT Gestalt Center Indonesia',
-      period: 'Sep 2022 - Aug 2023',
-      achievements: [
-        'Built cross-platform mobile app using Flutter with Node.js backend',
-        'Served over 1000 active users',
-        'Owned full SDLC from design to deployment',
-        'Delivered high-performance, secure, and stable application'
-      ]
-    }
-  ];
 
   const projects = [
     {
@@ -151,7 +125,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="{} min-h-screen bg-gradient-to-br from-slate-900 via-cyan-900 to-slate-900">
+    <div className="{`${inter.className}`} min-h-screen bg-gradient-to-br from-slate-900 via-cyan-900 to-slate-900">
       {/* Fixed Navigation */}
       <nav className="fixed top-0 w-full bg-black/10 backdrop-blur-md border-b border-white/10 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -238,7 +212,7 @@ const Portfolio = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              Hello! I'm{' '}
+              Hello! I&apos;m
               <span className="bg-gradient-to-r from-cyan-400 to-sky-400 bg-clip-text text-transparent">
                 Raditya Syidqi
               </span>
@@ -301,7 +275,7 @@ const Portfolio = () => {
               className="space-y-6"
             >
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm an enthusiastic developer with a profound passion for technology. 
+                I&apos;m an enthusiastic developer with a profound passion for technology. 
                 With over 2 years of experience, I specialize in building scalable web and mobile applications 
                 that solve complex business challenges.
               </p>
@@ -629,12 +603,12 @@ const Portfolio = () => {
             className="text-center mb-16"
           >
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Let's Work Together
+              Let&apos;s Work Together
             </motion.h2>
             <motion.div variants={fadeInUp} className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-sky-400 mx-auto mb-6"></motion.div>
             <motion.p variants={fadeInUp} className="text-xl text-gray-300 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and exciting projects. 
-              Feel free to reach out if you'd like to work together!
+              I&apos;m always interested in new opportunities and exciting projects. 
+              Feel free to reach out if you&apos;d like to work together!
             </motion.p>
           </motion.div>
 
@@ -784,7 +758,9 @@ const Portfolio = () => {
               className="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-600 to-sky-600 text-white px-8 py-4 rounded-full font-medium hover:shadow-lg transition-all duration-300"
             >
               <Download size={20} />
-              Download CV
+              <a href="CV_Raditya.pdf" download='CV_Raditya.pdf'>
+                Download CV
+              </a>
             </motion.button>
           </motion.div>
         </div>
